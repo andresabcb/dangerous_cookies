@@ -8,3 +8,10 @@ Aqui estão detalhadas as partes do meu desenvolvimento.
 ### manifest.json
 
 Neste arquivo, estão contidas as permissões e o detalhamento do que o meu plugin vai utilizar.
+
+## Úteis
+
+Para testar o plugin, entre no site:
+about:debugging#/runtime/this-firefox
+
+E insira o arquivo manifest.json que foi criado para o projeto.
