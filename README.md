@@ -11,7 +11,6 @@ Neste arquivo, estão contidas as permissões e o detalhamento do que o meu plug
 
 ## Úteis
 
-Para testar o plugin, entre no site:
-about:debugging#/runtime/this-firefox
+Para testar o plugin, entre no Firefox e acesse [este link](about:debugging#/runtime/this-firefox).
 
 E insira o arquivo manifest.json que foi criado para o projeto.
