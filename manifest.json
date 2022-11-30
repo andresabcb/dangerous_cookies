@@ -1,14 +1,22 @@
 {
   "description": "Firefox cookies security plugin",
   "manifest_version": 2,
-  "name": "DangerousCookies",
+  "name": "Dangerous Cookies",
   "version": "1.0",
+  "homepage_url": "https://github.com/andresabcb/dangerous_cookies",
+  "icons": {
+    "48": "img/cookies.png",
+    "96": "img/cookies.png"
+  },
 
   "browser_action": {
     "browser_style": true,
-    "default_icon": "img/cookies.png",
     "default_title": "Dangerous Cookies Plugin",
-    "default_popup": "dangerouscookies.html"
+    "default_popup": "popup/plugin.html",
+    "default_icon": {
+      "19": "img/cookies.png",
+      "38": "img/cookies.png"
+    }
   },
 
   "permissions": [
@@ -23,7 +31,7 @@
   "content_scripts": [
     {
       "matches": ["*://*/*"],
-      "js": ["plugin.js"]
+      "js": ["popup/plugin.js"]
     }
   ]
 }
