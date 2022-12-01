@@ -16,9 +16,8 @@ const getAllExternalLinks = () => {
   }
   return data;
 } 
-
   
-  browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
+browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
     //console.log("entrou em browser");
       if (request.method == "localstorage"){
         sendResponse({ 
@@ -32,4 +31,4 @@ const getAllExternalLinks = () => {
         });
       }
     }
-  );
+);

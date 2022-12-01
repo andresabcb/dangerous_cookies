@@ -9,12 +9,32 @@ Aqui estão detalhadas as partes do meu desenvolvimento.
 
 Neste arquivo, estão contidas as permissões e o detalhamento do que o meu plugin vai utilizar.
 
+### central.js
+
+Aqui estão as conexões necessárias para pegar as informações para a análise de Local Storage e de Embed Links (conexões e domínios de terceira parte).
+
+### cookies.js
+
+Neste arquivo pegamos e tratamos os cookies (se são de first ou third party e se são de sessão ou navegação).
+
+### embed.js
+
+Aqui descobrimos todos os links que estão na página (mesmo em imagens e embutidos em outros itens).
+
+### localstorage.js
+
+Este arquivo vai descobrir os itens que fazem parte do Local Storage (que é o armazenamento de dados pelo site).
+
+### plugin.css e plugin.html
+
+São os responsáveis pelo retorno ao usuário, envolvendo tudo que está no popup.
+
 ## Úteis
 
 Para testar o plugin, entre no Firefox e acesse o endereço abaixo: 
 > about:debugging#/runtime/this-firefox
 
-E insira o arquivo central.json que foi criado para o projeto.
+E insira o arquivo central.js que foi criado para o projeto.
 
 ## Requisitos do projeto
 
