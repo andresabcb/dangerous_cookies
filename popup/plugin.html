@@ -13,23 +13,33 @@
         <h2 id="header-title">Cookies at: </h2>
       </div>
       <h3 id="cookie-number"></h3>
-      <h3 id="session-number"></h3>
-      <h3 id="navigation-number"></h3>
+      <h3 id="firstparty-number"></h3>
+      <h3 id="thirdparty-number"></h3>
+      <h3 class="session_navi"id="session-number"></h3>
+      <h3 class="session_navi" id="navigation-number"></h3>
       <h3 id="localstorage-number"></h3>
-      <div class="text-section-header" id="session-number"></div>
-      <div class="text-section-header" id="navigation-number"></div>
+      <h3 id="embed-number"></h3>
       <ul id="cookie-list">
       </ul>
-      <h3>--- Detalhamento de cookies ---</h3>
-      <h3>First party cookies</h3>
-      <ul id="first-party-list"></ul>
-      <h3>Third party cookies</h3>
-      <ul id="third-party-list"></ul>
-      <h3>--- Detalhamento de local storage ---</h3>
+      <details>
+        <summary class="dropdown">Detalhamento de cookies</summary>
+        <h4>First party cookies</h4>
+        <ul id="first-party-list"></ul>
+        <h4>Third party cookies</h4>
+        <ul id="third-party-list"></ul>
+    </details>
+    <details>
+      <summary>Detalhamento de local storage</summary>
       <ul id="localstorage-list"></ul>
+  </details>
+  <details>
+    <summary>Detalhamento de embed links</summary>
+    <ul id="embed-list"></ul>
+</details>
     </div>
     <script src="cookies.js"></script>
     <script src="localstorage.js"></script>
+    <script src="embed.js"></script>
   </body>
 
 </html>

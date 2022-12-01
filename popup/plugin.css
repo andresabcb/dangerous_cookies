@@ -1,5 +1,6 @@
 html, body {
   width: 500px;
+  background-color: #ffffff;
 }
 
 .panel {
@@ -7,5 +8,24 @@ html, body {
 }
 
 li {
-  margin-bottom: 30px;
+  color: #000000;
+  margin-bottom: 5px;
+}
+
+ul.b {
+  list-style-type: square;
+}
+
+h1, h2, h3 {
+  color: #0000cd;
+}
+
+.session_navi {
+  color: #2093c3;
+}
+
+summary {
+  color: #0000cd;
+  font-family: "Courier New";
+  font-weight: bold;
 }

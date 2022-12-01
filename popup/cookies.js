@@ -17,8 +17,8 @@ function showCookiesForTab(tabs) {
     // separar em first e third party
     let firstparty_count = 0;
     let thirdparty_count = 0;
-    // let fp_number =  document.getElementById('fistparty-number');
-    // let tp_number =  document.getElementById('thirdparty-number');
+    let fp_number =  document.getElementById('firstparty-number');
+    let tp_number =  document.getElementById('thirdparty-number');
 
     // listas que vao armazenar os cookies de first e third party
     let firstparty_list = document.getElementById('first-party-list');
@@ -64,17 +64,17 @@ function showCookiesForTab(tabs) {
       cookies_all_title.appendChild(cookies_number_total);
       cookies_number.appendChild(cookies_all_title);
 
-      // // third party count
-      // let cookies_thirdparty_title = document.createElement("p");
-      // let cookies_number_tp = document.createTextNode("Total third party cookies: "+thirdparty_count+"/"+cookie_count);
-      // cookies_thirdparty_title.appendChild(cookies_number_tp);
-      // tp_number.appendChild(cookies_thirdparty_title);
+      // third party count
+      let cookies_thirdparty_title = document.createElement("p");
+      let cookies_number_tp = document.createTextNode("Total third party cookies: "+thirdparty_count+"/"+cookie_count);
+      cookies_thirdparty_title.appendChild(cookies_number_tp);
+      tp_number.appendChild(cookies_thirdparty_title);
 
-      // // first party count
-      // let cookies_firstparty_title = document.createElement("p");
-      // let cookies_number_fp = document.createTextNode("Total first party cookies: "+firstparty_count+"/"+cookie_count);
-      // cookies_firstparty_title.appendChild(cookies_number_fp);
-      // fp_number.appendChild(cookies_firstparty_title);
+      // first party count
+      let cookies_firstparty_title = document.createElement("p");
+      let cookies_number_fp = document.createTextNode("Total first party cookies: "+firstparty_count+"/"+cookie_count);
+      cookies_firstparty_title.appendChild(cookies_number_fp);
+      fp_number.appendChild(cookies_firstparty_title);
 
       // session count
       let cookies_session_title = document.createElement("p");
