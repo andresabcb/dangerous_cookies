@@ -6,7 +6,7 @@ function showCookiesForTab(tabs) {
   gettingAllCookies.then((cookies) => {
 
     let activeTabUrl = document.getElementById('header-title');
-    let text = document.createTextNode("Cookies at: "+tab.title);
+    let text = document.createTextNode(tab.title);
     let cookieList = document.getElementById('cookie-list');
     activeTabUrl.appendChild(text);
 
@@ -17,8 +17,8 @@ function showCookiesForTab(tabs) {
     // separar em first e third party
     let firstparty_count = 0;
     let thirdparty_count = 0;
-    let fp_number =  document.getElementById('fistparty-number');
-    let tp_number =  document.getElementById('thirdparty-number');
+    // let fp_number =  document.getElementById('fistparty-number');
+    // let tp_number =  document.getElementById('thirdparty-number');
 
     // listas que vao armazenar os cookies de first e third party
     let firstparty_list = document.getElementById('first-party-list');
@@ -63,7 +63,7 @@ function showCookiesForTab(tabs) {
       let cookies_number_total = document.createTextNode("Total cookies: "+cookie_count);
       cookies_all_title.appendChild(cookies_number_total);
       cookies_number.appendChild(cookies_all_title);
-      
+
       // // third party count
       // let cookies_thirdparty_title = document.createElement("p");
       // let cookies_number_tp = document.createTextNode("Total third party cookies: "+thirdparty_count+"/"+cookie_count);
@@ -104,4 +104,3 @@ function getActiveTab() {
   return browser.tabs.query({currentWindow: true, active: true});
 }
 getActiveTab().then(showCookiesForTab);
-Footer
